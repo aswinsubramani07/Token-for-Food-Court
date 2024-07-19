@@ -1,0 +1,56 @@
+<html>
+<head>
+<style>
+  .bordered { 
+        padding:150px;  
+        border: 3px solid #ff0000;
+        width:30px;   
+        height: 20px;
+    }
+  button {      
+       width:10%;  
+       height:5%;
+       color:orange;   
+       padding:10px;  
+       margin:20px;    
+       border-radius:500px;
+         }    
+  </style>
+  <script>
+  function placeorder(){
+  window.open("placeorder.html");
+  }
+  </script>
+</head>
+<body>
+  <form method="post" action="viewingitem.php">
+  <div>
+  <center>
+      <img src="https://holycowvegan.net/wp-content/uploads/2020/03/vegetable-fried-rice-5.jpg" style="width: 250px ; height: 200px"/>  
+      <p>Fried Rice</p>
+      <p>Price : 90Rs</p>
+      <p>Quantity : 90</p>
+        <p>
+        <label>Item Quantity:</label>
+        <input type="number" min="1" name="item_quantity" id="item_quantity" required />
+        </p>
+        <p>
+          <label >Timing:</label>
+          <select id="timing" required >
+            <option>Select the Timing</option>
+            <option value="10.00 AM">10.00 AM</option>
+            <option value="11.00 AM">11.00 AM</option>
+            <option value="12.00 PM">12.00 PM</option>
+          </select>
+        </p>
+		<p>After ordering, it will be ready within 15 minutes</p>
+        <div id="submit_wrapper">
+          <button type="placeorder"><B>Place Order</button>
+        </div>
+</div>
+</form>
+</center>
+</body>
+</html>
+
+   

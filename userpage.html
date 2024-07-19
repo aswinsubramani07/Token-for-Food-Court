@@ -1,0 +1,61 @@
+<DOCTYPE HTML>
+<html>
+<head>
+<body>
+<center>
+  <div>
+    <form >
+        <legend>Booking Food</legend>
+        <p>
+          <label for="food_name">Food</label>
+          <select id="food_name" name="food_name" required autofocus>
+            <option></option>
+            <option value="AAA">AAA</option>
+            <option value="BBB">BBB</option>
+            <option value="CCC">CCC</option>
+          </select>
+        </p>
+		<p>
+          <label for="price">Price</label>
+          <select id="price" name="price" required autofocus>
+            <option></option>
+            <option value="Rs.10">Rs.10</option>
+            <option value="Rs.20">Rs.20</option>
+            <option value="Rs.30">Rs.30</option>
+          </select>
+        </p>
+        <p>
+          <label >Timing</label>
+          <select id="timing" required>
+            <option></option>
+            <option value="10.00AM">10.00AM</option>
+            <option value="11.00AM">11.00AM</option>
+            <option value="12.00PM">12.00PM</option>
+          </select>
+        </p>
+        <p>
+          <label>Date<br/><span id="dateNote">
+          <input type="date" name="date" id="date" min="today" required />
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </p>
+        <p>
+          <label>Tokens</label>
+          <input type="number" min="1" name="tokens_quantity" id="tokens_quantity" required />
+        </p>
+        <p>
+          <label>Total Price</label>
+          <span id="total_price">(Enter data first)</span>
+        </p>
+        <div id="submit_wrapper">
+          <input type="submit" id="submit" value="Book Tokens" />
+        </div>
+      </fieldset>
+    </form>
+</div>
+</center>
+</body>
+</head>
+</html>
